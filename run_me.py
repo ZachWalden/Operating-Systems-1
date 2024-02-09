@@ -1,3 +1,7 @@
+#Zach Walden
+#w989j327
+#Operating Systems Assignment 1 - Running dir, cd, mkdir, echo, & type commands.
+
 import commands
 
 use_shell = True
@@ -14,6 +18,7 @@ while use_shell:
         
     user_in = input("Command Number: ")
     print("\n")
+    #Run desired command:
     match int(user_in):
         case 1:
             commands.dir()
