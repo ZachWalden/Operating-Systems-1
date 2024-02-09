@@ -1,9 +1,10 @@
 import commands
 
 use_shell = True
-command_list = ['dir', 'cd', 'mkdir', 'echo', 'type']
+
+#Display this menu & read in input until the user decides to exit
 while use_shell:
-    print("""Select a command to run: 
+    print("""\nSelect a command to run: 
     1. List directory contents (dir)
     2. Print working directory (cd)
     3. Create a new directory (mkdir)
@@ -12,6 +13,7 @@ while use_shell:
     6. Exit""")
         
     user_in = input("Command Number: ")
+    print("\n")
     match int(user_in):
         case 1:
             commands.dir()
@@ -22,7 +24,6 @@ while use_shell:
         case 4: 
             commands.echo()
         case 5: 
-            #Concatenate two files, output the result
             commands.type() 
         case 6: 
             use_shell = False
