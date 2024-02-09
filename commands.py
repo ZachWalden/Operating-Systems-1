@@ -36,8 +36,8 @@ def type():
     print("Input your files to be concatenated. (example_file1.txt & example_file2.txt included)")
     
     #Read in the user's files to concatenate & the resulting file name.
-    file_chosen1 = input("Input file 1 to be concatenated (INCLUDING FILE EXTENSION): ")
-    file_chosen2 = input("Input file 2 to be concatenated (INCLUDING FILE EXTENSION): ")
+    file_chosen1 = input("Input file 1 to be concatenated from your current directory (INCLUDING FILE EXTENSION): ")
+    file_chosen2 = input("Input file 2 to be concatenated from your current directory (INCLUDING FILE EXTENSION): ")
     new_file_name = input("Input the name of the resulting concatenated file, being placed in your current directory (INCLUDING FILE EXTENSION): ")
     subprocess.run(f"type {file_chosen1} {file_chosen2} > {new_file_name}", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
